@@ -11,7 +11,7 @@ public class Main {
         String resposta = new Scanner(System.in).nextLine();
         
         if(resposta.compareToIgnoreCase("sim") == 0){
-        	System.out.println("Escolha o múmero do conselho:(1 a 224 ou 0 sendo aleátorio) ");
+        	System.out.println("Escolha o número do conselho:(1 a 224 ou 0 sendo aleátorio) ");
         	int respostaNmr = new Scanner(System.in).nextInt();
         	if(respostaNmr >= 0 && respostaNmr < 225) {
         		Conselho conselho = ServicoDeConselho.buscaConselhoPorId(respostaNmr);
